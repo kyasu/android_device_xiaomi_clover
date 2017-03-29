@@ -43,6 +43,10 @@ TARGET_SCREEN_WIDTH := 1200
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 
+# Folio
+PRODUCT_PACKAGES += \
+    folio_daemon
+
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee

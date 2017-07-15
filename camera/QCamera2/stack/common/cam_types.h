@@ -157,7 +157,11 @@
 #define MIN_INFLIGHT_HFR_REQUESTS (40)
 #define MAX_INFLIGHT_EIS_REQUESTS  10
 
-#define MAX_VIDEO_BUFFERS 30
+#define MAX_VIDEO_BUFFERS 24
+
+// Max allowed video buffer count for 30fps
+#define MAX_30FPS_VIDEO_BUFFERS 18
+
 #define MAX_VIDEO_VENDOR_EIS_BUFFERS 42
 #define MAX_DUAL_CAM_MUXER_BUF 3
 

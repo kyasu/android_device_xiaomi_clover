@@ -46,7 +46,7 @@ VENDOR_SECURITY_PATCH := 2020-04-05
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit the proprietary files
 include vendor/xiaomi/clover/BoardConfigVendor.mk

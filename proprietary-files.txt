@@ -383,7 +383,7 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/keystore.sdm660.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
-# Sensors - from LA.UM.8.2.r1-06700-sdm660.0
+# Sensors - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 

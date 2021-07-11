@@ -36,7 +36,6 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_SCREEN_DENSITY := 320
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := clover_defconfig
 
 # Manifest

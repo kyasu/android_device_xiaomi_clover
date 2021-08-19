@@ -34,12 +34,12 @@ on property:persist.sys.fp.vendor=none
 
 on property:ro.vendor.radio.noril=yes
 	mount none /dev/null /system/app/CarrierDefaultApp/CarrierDefaultApp.apk bind
-	mount none /dev/null /system/app/messaging/messaging.apk bind
-	mount none /dev/null /system/priv-app/Dialer/Dialer.apk bind
-	mount none /dev/null /system/priv-app/CarrierConfig/CarrierConfig.apk bind
+	mount none /dev/null /system/product/app/messaging/messaging.apk bind
+	mount none /dev/null /system/product/priv-app/Dialer/Dialer.apk bind
+	mount none /dev/null /system/system_ext/priv-app/CarrierConfig/CarrierConfig.apk bind
 	mount none /dev/null /system/priv-app/CallLogBackup/CallLogBackup.apk bind
-	mount none /dev/null /system/priv-app/CellBroadcastReceiver/CellBroadcastReceiver.apk bind
-	mount none /dev/null /system/priv-app/EmergencyInfo/EmergencyInfo.apk bind
+	mount none /dev/null /system/priv-app/CellBroadcastLegacyApp/CellBroadcastLegacyApp.apk bind
+	mount none /dev/null /system/system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk bind
 
 # Set max charge current
 on property:sys.incall=true

@@ -377,6 +377,16 @@ vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
+# Graphics firmware - from jasmine-user-10-QKQ1.190910.002-V11.0.19.0.QDIMIXM
+vendor/firmware/a512_zap.b00|85a7fc0008f9a2071d8b3d0cc212b19141633267
+vendor/firmware/a512_zap.b01|e0b7818182fac232182bfb70a4f43ec3e36779b9
+vendor/firmware/a512_zap.b02|33cc074ca840ae59f310a0e217aa7409afb30ac2
+vendor/firmware/a512_zap.elf|5dd4278559e9276f641bb121d7577d1a3ca3fcbb
+vendor/firmware/a512_zap.mdt|cc149dda6e109dd3f1f92e74349665a8c521ff79
+vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
+
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
@@ -385,9 +395,26 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/keystore.sdm660.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
+# Sensors - from LA.UM.8.2.r1-07500-sdm660.0
+product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|92142d25b6eaf6976e17e726ab70536534648459
+product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|a6486bb8506902bbe2a4b743000e3e91ab93246a
+vendor/bin/sensors.qti|b0e298dfa67ca3e5910de2b281f9db285c2b1da3
+vendor/lib/hw/activity_recognition.sdm660.so|47c588e1bdb357f31721171dc1d6a781c743bd64
+vendor/lib/libsensor1.so|b1b0dcb45432e51fabffe595010f35a017c7a3fd
+vendor/lib/libsensor_reg.so|170c40b9b7d48c922cd3ca1a552a34311ee79799
+vendor/lib/sensor_calibrate.so|9f81f1bf43b7871555915c9d57bba16d0419af40
+vendor/lib64/hw/activity_recognition.sdm660.so|d7dac1daafb812625094f5e85097c00fdc385da1
+vendor/lib64/libsensor1.so|dac9d5fb1b5aacfa5bedf812ebdd04eadd0af2dc
+vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
+vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
+
 # Sensors - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/lib/sensors.ssc.so|9276c8863dccd2cd13e0a29083e75648ab0c0e97
 vendor/lib64/sensors.ssc.so|da3e7b1722ea136bd76b716ddd2ec814ee3cc0b7
+
+# Sensors configs - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sensor_def_qcomdev.conf
 
 # Thermal (Configs)
 vendor/etc/thermal-engine-battery.conf
@@ -397,6 +424,14 @@ vendor/etc/thermal-engine-performance.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-default.conf
 vendor/etc/thermal-engine.conf
+
+# Thermal - from jasmine-user-10-QKQ1.190910.002-V11.0.19.0.QDIMIXM
+vendor/bin/thermal-engine|459c3fb5ab99ac95cff15387358c1d0e239a5735
+vendor/lib/libthermalfeature.so|b2a90496eb99301cc0f065fe97782358858668a3
+vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
+vendor/lib64/libthermalioctl.so|2f0ee866e9059b1df9ca7b63815591354e7c77d8
+-vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
+-vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
 
 # Wifi - from jasmine
 vendor/bin/cnss-daemon|a7b196d0c8204f6fbe445710e8d062d0c2d9b42f

@@ -24,7 +24,7 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
-DEVICE_PATH := device/xiaomi/platina
+DEVICE_PATH := device/xiaomi/clover
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -65,13 +65,17 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+# Tablet features
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Wifi
 PRODUCT_PACKAGES += \
-    PlatinaWifiOverlay
+    CloverWifiOverlay
 
 # Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
+$(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)

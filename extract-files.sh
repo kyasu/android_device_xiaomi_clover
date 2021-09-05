@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=platina
+export DEVICE=clover
 export DEVICE_COMMON=sdm660-common
 export VENDOR=xiaomi
 

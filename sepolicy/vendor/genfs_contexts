@@ -1,0 +1,2 @@
+# Touchscreen
+genfscon proc /touchscreen                                      u:object_r:sysfs_touchpanel:s0

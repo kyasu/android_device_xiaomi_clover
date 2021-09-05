@@ -1,0 +1,2 @@
+# DT2W
+/proc/touchscreen/enable_dt2w                   u:object_r:sysfs_touchpanel:s0

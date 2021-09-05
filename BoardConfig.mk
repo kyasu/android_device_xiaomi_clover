@@ -40,6 +40,9 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 320
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
+
 # Kernel
 TARGET_KERNEL_CONFIG := clover_defconfig
 

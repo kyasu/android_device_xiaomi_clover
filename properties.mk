@@ -6,7 +6,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.stats.test=5 \
     persist.camera.HAL3.enabled=1 \
-    persist.camera.preview.ubwc=0
+    persist.camera.preview.ubwc=0 \
+    persist.vendor.camera.dual.isp.sync=0 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.exif.make=Xiaomi
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \

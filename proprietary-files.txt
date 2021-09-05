@@ -41,7 +41,7 @@ vendor/etc/camera/s5k5e8_chromatix.xml|a082b4d7d5d31ffcd750683befc48e70edba5722
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin|1ca031d5f8eb0e6aa3eedf7df8d53223b5054bc5
 
 # Camera
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|41bb59a592607edbdb71b57de1c58b24c25faab1
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so

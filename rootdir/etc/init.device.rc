@@ -76,6 +76,10 @@ on boot
     # Enable camera read sensors data
     setprop persist.camera.gyro.disable 0
 
+    # Camera ID
+    setprop persist.vendor.camera.exif.model "Mi PAD 4"
+    setprop persist.sys.exif.model "Mi PAD 4"
+
 on post-fs-data
     mkdir /persist/qti_fp 0700 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system	
@@ -85,3 +89,19 @@ on post-fs-data
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
+
+on property:persist.sys.fp.vendor=none
+    mount none /dev/null /vendor/etc/permissions/android.hardware.fingerprint.xml bind
+    mount none /dev/null /vendor/framework/com.fingerprints.extension.jar bind
+    mount none /dev/null /vendor/etc/permissions/com.fingerprints.extension.xml bind
+    mount none /dev/null /vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk bind
+    stop vendor.fps_hal
+
+on property:ro.vendor.radio.noril=yes
+    mount none /dev/null /system/app/CarrierDefaultApp/CarrierDefaultApp.apk bind
+    mount none /dev/null /system/app/messaging/messaging.apk bind
+    mount none /dev/null /system/priv-app/Dialer/Dialer.apk bind
+    mount none /dev/null /system/priv-app/CarrierConfig/CarrierConfig.apk bind
+    mount none /dev/null /system/priv-app/CallLogBackup/CallLogBackup.apk bind
+    mount none /dev/null /system/priv-app/CellBroadcastReceiver/CellBroadcastReceiver.apk bind
+    mount none /dev/null /system/priv-app/EmergencyInfo/EmergencyInfo.apk bind

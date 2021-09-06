@@ -1,17 +1,29 @@
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.fluence.audiorec=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bokeh.switch.lux=290 \
-    persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.camera.depth.focus.cb=0 \
-    persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.expose.aux=1 \
-    persist.vendor.camera.imglib.usefdlite=1 \
-    persist.vendor.camera.isp.clock.optmz=0 \
-    persist.vendor.camera.isp.turbo=1 \
-    persist.vendor.camera.linkpreview=0 \
-    persist.vendor.camera.preview.ubwc=0 \
-    persist.vendor.camera.stats.test=0 \
-    persist.vendor.imx376_ofilm.light.lux=275 \
-    persist.vendor.imx376_ofilm.low.lux=290 \
-    persist.vendor.imx376_sunny.light.lux=275 \
-    persist.vendor.imx376_sunny.low.lux=290
+    persist.camera.stats.test=5 \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.preview.ubwc=0
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.vds.allow_hwc=0
+
+# DPI
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.lcd_density=320
+
+# Lockscreen rotation (requested by ibooth2004@XDA (https://forum.xda-developers.com/showpost.php?p=82157253&postcount=545)
+PRODUCT_PROPERTY_OVERRIDES += \
+    lockscreen.rot_override=true
+
+# Single SIM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=ssss
+
+# Ultra Sound
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.chk.cal.us=0

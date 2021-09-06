@@ -28,6 +28,8 @@
 #
 
 on boot
+    start macaddress_setup
+
     # Camera
     chmod 0660 /sys/android_camera/sensor
     chown system system /sys/android_camera/sensor
@@ -105,3 +107,9 @@ on property:ro.vendor.radio.noril=yes
     mount none /dev/null /system/priv-app/CallLogBackup/CallLogBackup.apk bind
     mount none /dev/null /system/priv-app/CellBroadcastReceiver/CellBroadcastReceiver.apk bind
     mount none /dev/null /system/priv-app/EmergencyInfo/EmergencyInfo.apk bind
+
+service macaddress_setup /vendor/bin/sh /vendor/bin/init.macaddress_setup.sh
+    class main
+    user root
+    group root
+    oneshot

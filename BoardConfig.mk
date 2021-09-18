@@ -9,9 +9,6 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/clover
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := clover
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200

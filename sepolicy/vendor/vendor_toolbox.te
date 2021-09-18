@@ -1,0 +1,11 @@
+type vendor_toolbox, domain;
+init_daemon_domain(vendor_toolbox)
+
+# Allow vendor_toolbox to use sys_admin capability
+allow vendor_toolbox self:capability sys_admin;
+
+# Allow vendor_toolbox to execute /vendor/bin/toybox_vendor
+allow vendor_toolbox vendor_toolbox_exec:file execute_no_trans;
+
+# Allow vendor_toolbox to read directories in rootfs
+allow vendor_toolbox rootfs:dir r_dir_perms;

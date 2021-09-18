@@ -1,0 +1,5 @@
+# Kcal
+type kcal_dev, sysfs_type, fs_type;
+
+# Sockets
+type audio_socket, file_type;

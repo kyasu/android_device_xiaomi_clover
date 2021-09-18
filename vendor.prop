@@ -1,0 +1,26 @@
+# Audio
+persist.vendor.audio.fluence.audiorec=true
+
+# Camera
+persist.camera.stats.test=5
+persist.camera.HAL3.enabled=1
+persist.camera.preview.ubwc=0
+persist.vendor.camera.dual.isp.sync=0
+persist.vendor.camera.HAL3.enabled=1
+persist.vendor.camera.eis.enable=1
+persist.vendor.camera.exif.make=Xiaomi
+
+# Display
+debug.vds.allow_hwc=0
+
+# DPI
+vendor.display.lcd_density=320
+
+# Lockscreen rotation (requested by ibooth2004@XDA (https://forum.xda-developers.com/showpost.php?p=82157253&postcount=545)
+lockscreen.rot_override=true
+
+# Single SIM
+persist.radio.multisim.config=ssss
+
+# Ultra Sound
+audio.chk.cal.us=0

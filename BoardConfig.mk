@@ -47,7 +47,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 TARGET_KERNEL_CONFIG := clover_defconfig
 
 # Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472

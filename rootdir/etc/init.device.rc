@@ -57,7 +57,6 @@ on boot
 # Set permission for double tap to wake support
     chmod 0660 /proc/touchscreen/enable_dt2w
     chown system system /proc/touchscreen/enable_dt2w
-    write /proc/touchscreen/enable_dt2w 1
 
 # Camera ID
     setprop persist.vendor.camera.exif.model "Mi PAD 4"

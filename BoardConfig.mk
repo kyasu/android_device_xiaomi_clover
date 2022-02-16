@@ -23,6 +23,7 @@ TARGET_SCREEN_DENSITY := 320
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 TARGET_KERNEL_CONFIG := clover_defconfig
 
 # Manifest

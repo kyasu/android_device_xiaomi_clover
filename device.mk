@@ -1,11 +1,20 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)
 
 DEVICE_PATH := device/xiaomi/clover
 
@@ -58,6 +67,3 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     CloverWifiOverlay
-
-# Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)

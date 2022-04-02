@@ -1,2 +1,5 @@
 binder_call(gmscore_app, hal_memtrack_default);
 dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
+allow gmscore_app zygote:unix_stream_socket getopt;
+get_prop(gmscore_app, aac_drc_prop)
+get_prop(gmscore_app, ab_update_gki_prop)

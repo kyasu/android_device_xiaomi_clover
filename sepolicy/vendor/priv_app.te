@@ -1,0 +1,5 @@
+allow priv_app zygote:unix_stream_socket getopt;
+get_prop(priv_app, aac_drc_prop)
+get_prop(priv_app, ab_update_gki_prop)
+get_prop(priv_app, apexd_config_prop)
+get_prop(priv_app, persist_camera_prop)

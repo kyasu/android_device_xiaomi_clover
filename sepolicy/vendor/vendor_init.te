@@ -1,1 +1,5 @@
 set_prop(vendor_init, vendor_freq_prop)
+set_prop(vendor_init, camera_prop)
+get_prop(vendor_init, hal_fingerprint_prop)
+
+allow vendor_init camera_data_file:dir create_dir_perms;

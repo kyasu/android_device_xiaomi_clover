@@ -7,10 +7,6 @@
 # DT2W
 /proc/touchscreen/enable_dt2w                   u:object_r:sysfs_touchpanel:s0
 
-# blkio
-/dev/blkio(/.*)?                                u:object_r:blkio_dev:s0
-/dev/blkio/background(/.*)?                     u:object_r:blkio_dev:s0
-
 # Debug
 /sys/kernel/debug/mmc0/mmc0:0001/ext_csd        u:object_r:debugfs_mmc:s0
 

@@ -10,6 +10,9 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.eis.enable=1
 persist.vendor.camera.exif.make=Xiaomi
 
+# Bluetooth
+bluetooth.device.default_name=Xiaomi Mi PAD 4
+
 # Display
 debug.vds.allow_hwc=0
 

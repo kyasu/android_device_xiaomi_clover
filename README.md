@@ -21,3 +21,22 @@ Xiaomi MI PAD 4 was announced and released in June 2018.
 ## Device picture
 
 ![Xiaomi MI PAD 4](http://i8.mifile.cn/a1/pms_1529843020.73617168!560x560.jpg)
+
+***
+
+## For building LineageOS 19
+Create '.repo/local_manifests/roomservice.xml' with the following content:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" />
+
+  <project name="kyasu/android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="github" />
+  <project name="kyasu/android_device_xiaomi_sdm660-common" path="device/xiaomi/sdm660-common" remote="github" />
+  <project name="kyasu/android_device_xiaomi_clover" path="device/xiaomi/clover" remote="github" />
+  <project name="kyasu/android_vendor_xiaomi_sdm660-common" path="vendor/xiaomi/sdm660-common" remote="github" />
+  <project name="kyasu/android_vendor_xiaomi_clover" path="vendor/xiaomi/clover" remote="github" />
+
+</manifest>
+```

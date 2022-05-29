@@ -103,7 +103,7 @@ on post-fs-data
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
 
-on property:persist.sys.fp.vendor=none
+on property:persist.vendor.sys.fp.vendor=none
     mount none /dev/null /vendor/etc/permissions/android.hardware.fingerprint.xml bind
     mount none /dev/null /vendor/framework/com.fingerprints.extension.jar bind
     mount none /dev/null /vendor/etc/permissions/com.fingerprints.extension.xml bind

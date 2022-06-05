@@ -5,3 +5,6 @@ genfscon sysfs /devices/virtual/graphics/fb2                    u:object_r:sysfs
 
 # Touchscreen
 genfscon proc /touchscreen                                      u:object_r:sysfs_touchpanel:s0
+
+# Fingerprint
+genfscon sysfs /devices/soc/soc:fpc1020/compatible_all          u:object_r:sysfs_fingerprint:s0

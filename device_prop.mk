@@ -40,5 +40,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=ssss
 
 # Ultra Sound
-PRODUCT_PROPERTY_OVERRIDES += \
+SYSTEM_PROPERTY_OVERRIDES += \
     audio.chk.cal.us=0

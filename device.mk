@@ -32,10 +32,6 @@ $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 PRODUCT_PACKAGES += \
     folio_daemon
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl

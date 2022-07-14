@@ -28,9 +28,6 @@ BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
-# Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-05
-
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
 

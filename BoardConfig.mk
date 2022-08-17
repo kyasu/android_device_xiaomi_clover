@@ -25,9 +25,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
-
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
 

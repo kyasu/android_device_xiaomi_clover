@@ -49,13 +49,6 @@ on property:sys.incall=true
 on property:sys.incall=false
     write /sys/class/power_supply/battery/constant_charge_current_max 1000000
 
-on fs
-    mount_all --early /vendor/etc/fstab.qcom
-    swapon_all /vendor/etc/fstab.qcom
-
-on late-fs
-    mount_all --late /vendor/etc/fstab.qcom
-
 on post-fs
     wait_for_prop vendor.sys.listeners.registered true
 

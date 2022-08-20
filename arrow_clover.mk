@@ -25,9 +25,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Define first api level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-
 # Inherit some common Arrow stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
 

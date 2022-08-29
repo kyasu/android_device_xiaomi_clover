@@ -22,21 +22,21 @@
 #
 
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.fluence.audiorec=true
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.camera.stats.test=5 \
     persist.camera.HAL3.enabled=1 \
     persist.camera.preview.ubwc=0
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     debug.vds.allow_hwc=0
 
 # Single SIM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.radio.multisim.config=ssss
 
 # Ultra Sound

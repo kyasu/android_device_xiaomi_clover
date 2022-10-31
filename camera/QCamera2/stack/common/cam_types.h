@@ -1693,7 +1693,6 @@ typedef enum {
 
 typedef struct {
     float exp_time;
-    float real_gain;
     int32_t iso_value;
     uint32_t flash_needed;
     uint32_t settled;

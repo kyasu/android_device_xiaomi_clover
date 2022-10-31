@@ -1192,7 +1192,6 @@ typedef struct {
     INCLUDE(CAM_INTF_META_RTB_DATA,                     cam_rtb_msg_type_t,          1);
     INCLUDE(CAM_INTF_META_DC_CAPTURE,                   uint8_t,                     1);
     INCLUDE(CAM_INTF_PARM_BOKEH_MODE,                   uint8_t,                     1);
-    INCLUDE(CAM_INTF_META_USERZOOM,                     cam_zoom_info_t,             1);
     INCLUDE(CAM_INTF_META_SEND_IMMEDIATELY,             uint8_t,                     1);
     INCLUDE(CAM_INTF_PARAM_COUNTER,                     uint32_t,                    1);
     INCLUDE(XIAOMI_01,                                  uint32_t,                    1);

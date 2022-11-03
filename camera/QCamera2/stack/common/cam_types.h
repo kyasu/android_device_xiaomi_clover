@@ -209,12 +209,7 @@
 
 #define MAX_SECURE_BUFFERS  3
 
-#define CAM_GRALLOC_USAGE_PRIVATE_HEIF (UINT32_C(1) << 27)
-#define IS_USAGE_HEIF(usage) (((usage) & (CAM_GRALLOC_USAGE_PRIVATE_HEIF)) \
-        == (CAM_GRALLOC_USAGE_PRIVATE_HEIF))
-
 #define FRAME_META_INCORRECT 2
-
 
 typedef uint64_t cam_feature_mask_t;
 
@@ -614,7 +609,6 @@ typedef struct {
     uint32_t min_stride;
     uint32_t min_scanline;
     cam_offset_info_t offset_info;
-    uint32_t usage;
 } cam_padding_info_t;
 
 typedef struct {

@@ -775,17 +775,7 @@ cam_format_t QCamera3Channel::getStreamDefaultFormat(cam_stream_type_t type,
     case CAM_STREAM_TYPE_CALLBACK:
         /* Changed to macro to ensure format sent to gralloc for callback
         is also changed if the preview format is changed at camera HAL */
-#if VENUS_PRESENT
-        if(IS_USAGE_HEIF(usage))
-        {
-            streamFormat = CAM_FORMAT_YUV_420_NV12_VENUS;
-        }else{
-            streamFormat = CALLBACK_STREAM_FORMAT;
-        }
-#else
         streamFormat = CALLBACK_STREAM_FORMAT;
-#endif
-
         break;
     case CAM_STREAM_TYPE_RAW:
         streamFormat = hal_obj->mRdiModeFmt;
@@ -1796,11 +1786,7 @@ int32_t QCamera3ProcessingChannel::translateStreamTypeAndFormat(camera3_stream_t
             }
             break;
         case HAL_PIXEL_FORMAT_IMPLEMENTATION_DEFINED:
-            if(IS_USAGE_HEIF(stream->usage)) {
-                streamType = CAM_STREAM_TYPE_CALLBACK;
-                streamFormat = getStreamDefaultFormat(CAM_STREAM_TYPE_CALLBACK,
-                        stream->width, stream->height, stream->usage);
-            }else if (stream->usage & GRALLOC_USAGE_HW_VIDEO_ENCODER) {
+            if (stream->usage & GRALLOC_USAGE_HW_VIDEO_ENCODER) {
                 streamType = CAM_STREAM_TYPE_VIDEO;
                 streamFormat = getStreamDefaultFormat(CAM_STREAM_TYPE_VIDEO,
                         stream->width, stream->height, stream->usage);
@@ -1946,8 +1932,7 @@ int32_t QCamera3ProcessingChannel::setReprocConfig(reprocess_config_t &reproc_cf
         case CAM_STREAM_TYPE_CALLBACK:
         default:
             rc = mm_stream_calc_offset_snapshot(streamFormat, &reproc_cfg.input_stream_dim,
-                    reproc_cfg.stream_type, reproc_cfg.padding,
-                    &reproc_cfg.input_stream_plane_info);
+                    reproc_cfg.padding, &reproc_cfg.input_stream_plane_info);
             break;
     }
     if (rc != 0) {
@@ -3868,7 +3853,7 @@ int32_t QCamera3YUVChannel::initialize(cam_is_type_t isType)
 
     mIsType  = isType;
     mStreamFormat = getStreamDefaultFormat(CAM_STREAM_TYPE_CALLBACK,
-            mCamera3Stream->width, mCamera3Stream->height, mCamera3Stream->usage);
+            mCamera3Stream->width, mCamera3Stream->height);
 
     streamDim.width = mCamera3Stream->width;
     streamDim.height = mCamera3Stream->height;
@@ -3912,8 +3897,8 @@ int32_t QCamera3YUVChannel::initialize(cam_is_type_t isType)
     paddingInfo.width_padding = MAX(paddingInfo.width_padding, paddingInfo.height_padding);
     paddingInfo.height_padding = paddingInfo.width_padding;
 
-    rc = mm_stream_calc_offset_snapshot(mStreamFormat, &streamDim,
-                 CAM_STREAM_TYPE_CALLBACK, &paddingInfo, &buf_planes);
+    rc = mm_stream_calc_offset_snapshot(mStreamFormat, &streamDim, &paddingInfo,
+            &buf_planes);
     if (rc < 0) {
         LOGE("mm_stream_calc_offset_preview failed");
         return rc;

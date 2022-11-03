@@ -67,8 +67,6 @@ typedef int64_t nsecs_t;
 typedef struct {
     uint32_t frameNum;
     cam_stream_type_t reqStreamType;
-    bool is_internal_req;
-    bool past_frame;
 }zsl_req_t;
 
 namespace qcamera {
@@ -330,8 +328,7 @@ protected:
     bool isWNREnabled() {return m_bWNROn;};
     void startPostProc(const reprocess_config_t &reproc_cfg);
     void issueChannelCb(buffer_handle_t *resultBuffer,
-            uint32_t resultFrameNumber,
-            camera3_buffer_status status=CAMERA3_BUFFER_STATUS_OK);
+            uint32_t resultFrameNumber);
     int32_t releaseOfflineMemory(uint32_t resultFrameNumber);
 
     QCamera3StreamMem mMemory; //output buffer allocated by fwk
@@ -716,7 +713,6 @@ public:
             uint32_t framenum, bool dropFrame = false);
     int returnBufferError(uint32_t frameNumber);
     void releaseSuperBuf(mm_camera_super_buf_t *recvd_frame);
-    void handleDroppedZSLFrame(uint32_t frame_number);
     virtual void ZSLChannelCb(mm_camera_super_buf_t *recvd_frame);
     virtual int allocateZSLBuffers();
     virtual void startDeferredAllocation();
@@ -730,7 +726,6 @@ public:
     void* getQuadraOutputBuffer(uint32_t frameNumber, bool free = true);
     void overrideStreamDim(uint32_t width, uint32_t height);
     void stopPostProc();
-    int32_t notifyDropForPendingBuffer(uint32_t frameNumber, buffer_handle_t *buf);
     virtual void setQuadraMetaBuffer(metadata_buffer_t *Framemeta = NULL,
                                                     metadata_buffer_t *Reprocmeta = NULL);
     virtual void getQuadraMetaBuffer(metadata_buffer_t **meta);
@@ -742,7 +737,6 @@ private:
         bool offlinePpFlag;
         bool isReturnBuffer;
         buffer_handle_t *output;
-        bool is_error_buffer;
         mm_camera_super_buf_t *callback_buffer;
     } PpInfo;
 

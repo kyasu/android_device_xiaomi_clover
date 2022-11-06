@@ -358,8 +358,8 @@ vendor/etc/qdcm_calib_data_NT51021_BOE_BOE.xml|16f45a1a2c1428333af539e1247828882
 vendor/etc/qdcm_calib_data_NT51021_BOE_BOE10.xml|16f45a1a2c1428333af539e12478288826bf0c00
 
 # Fingerprint sensor - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
--vendor/app/QFingerprintService/QFingerprintService.apk
+vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
+vendor/app/QFingerprintService/QFingerprintService.apk
 vendor/bin/qfp-daemon
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
@@ -430,8 +430,8 @@ vendor/bin/thermal-engine|459c3fb5ab99ac95cff15387358c1d0e239a5735
 vendor/lib/libthermalfeature.so|b2a90496eb99301cc0f065fe97782358858668a3
 vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
 vendor/lib64/libthermalioctl.so|2f0ee866e9059b1df9ca7b63815591354e7c77d8
--vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
--vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
+vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
+vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
 
 # Wifi - from jasmine
 vendor/bin/cnss-daemon|a7b196d0c8204f6fbe445710e8d062d0c2d9b42f

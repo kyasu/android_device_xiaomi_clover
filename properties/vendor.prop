@@ -1,0 +1,9 @@
+persist.vendor.audio.fluence.audiorec=true
+
+persist.camera.stats.test=5
+persist.camera.HAL3.enabled=1
+persist.camera.preview.ubwc=0
+
+debug.vds.allow_hwc=0
+
+persist.radio.multisim.config=ssss

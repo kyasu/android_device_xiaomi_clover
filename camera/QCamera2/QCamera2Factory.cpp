@@ -496,7 +496,7 @@ struct hw_module_methods_t QCamera2Factory::mModuleMethods = {
  *              none-zero failure code
  *==========================================================================*/
 int QCamera2Factory::openLegacy(
-        int32_t cameraId, uint32_t halVersion, struct hw_device_t** hw_device)
+        int32_t cameraId, uint32_t halVersion, struct hw_device_t** hw_device __unused)
 {
     int rc = NO_ERROR;
 

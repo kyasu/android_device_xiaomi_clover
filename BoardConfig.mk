@@ -11,6 +11,11 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
 
+# Camera
+TARGET_TS_MAKEUP := true
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+
 # Device Path
 DEVICE_PATH := device/xiaomi/clover
 

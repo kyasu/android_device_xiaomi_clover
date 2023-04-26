@@ -7,6 +7,10 @@
 
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1200
+
 # Device Path
 DEVICE_PATH := device/xiaomi/clover
 
@@ -14,7 +18,7 @@ DEVICE_PATH := device/xiaomi/clover
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 
 # Density
-TARGET_SCREEN_DENSITY := 320
+TARGET_SCREEN_DENSITY := 240
 
 # Kernel
 TARGET_KERNEL_CONFIG := clover_defconfig

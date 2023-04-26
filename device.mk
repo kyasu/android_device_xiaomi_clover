@@ -86,10 +86,3 @@ PRODUCT_PACKAGES += \
 
 # Vendor files
 $(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)
-
-# AOSP DEVICE
-PRODUCT_NAME := aosp_clover
-PRODUCT_DEVICE := clover
-PRODUCT_MODEL := Mi PAD 4 (AOSP)
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Xiaomi

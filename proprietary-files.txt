@@ -365,12 +365,3 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|eaf70216b4e53f409c22
 # Sensors - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
-
-# Thermal (Configs)
-vendor/etc/thermal-engine-battery.conf
-vendor/etc/thermal-engine-battery2.conf
-vendor/etc/thermal-engine-gameing.conf
-vendor/etc/thermal-engine-performance.conf
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-default.conf
-vendor/etc/thermal-engine.conf

@@ -2528,13 +2528,6 @@ typedef enum {
     CAM_INTF_PARM_BOKEH_MODE,
     CAM_INTF_META_SEND_IMMEDIATELY,
     CAM_INTF_PARAM_COUNTER,
-    XIAOMI_01,
-    XIAOMI_02,
-    XIAOMI_03,
-    XIAOMI_04,
-    XIAOMI_05,
-    XIAOMI_06,
-    XIAOMI_07,
     CAM_INTF_PARM_MAX
 } cam_intf_parm_type_t;
 

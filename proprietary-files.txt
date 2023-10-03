@@ -348,3 +348,6 @@ vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+# Keymaster - from Honeywell/hon660/hon660:12/94.00.03/0037:user/release-keys
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d

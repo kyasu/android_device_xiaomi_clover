@@ -433,5 +433,5 @@ vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
 vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
 vendor/lib64/libthermalioctl.so|2f0ee866e9059b1df9ca7b63815591354e7c77d8
 
-# Wifi - from jasmine
-vendor/bin/cnss-daemon|a7b196d0c8204f6fbe445710e8d062d0c2d9b42f
+# Wifi - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345

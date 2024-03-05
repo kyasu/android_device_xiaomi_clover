@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 # Consumerir
 BOARD_HAVE_IR := false
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    com.fingerprints.extension@1.0.vendor
+
 # FM
 BOARD_HAVE_QCOM_FM := false
 

@@ -35,16 +35,8 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
-# Camera
-PRODUCT_PACKAGES += \
-    libstdc++_vendor
-
 # Consumerir
 BOARD_HAVE_IR := false
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    com.fingerprints.extension@1.0.vendor
 
 # FM
 BOARD_HAVE_QCOM_FM := false
@@ -59,10 +51,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     init.device.rc \
     init.macaddress_setup.sh
-
-# Shims
-PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

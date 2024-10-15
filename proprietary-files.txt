@@ -47,7 +47,7 @@ vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_lowlight.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_high_dynamic_range.so
-vendor/lib/libcdsprpc.so
+#vendor/lib/libcdsprpc.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libdualcameraddm.so
@@ -136,7 +136,7 @@ vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideobokeh.so
 vendor/lib/libvideoutils.so
-vendor/lib64/libcdsprpc.so
+#vendor/lib64/libcdsprpc.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
@@ -410,14 +410,16 @@ vendor/lib/hw/activity_recognition.sdm660.so|47c588e1bdb357f31721171dc1d6a781c74
 vendor/lib/libsensor1.so|b1b0dcb45432e51fabffe595010f35a017c7a3fd
 vendor/lib/libsensor_reg.so|170c40b9b7d48c922cd3ca1a552a34311ee79799
 vendor/lib/sensor_calibrate.so|9f81f1bf43b7871555915c9d57bba16d0419af40
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|92142d25b6eaf6976e17e726ab70536534648459
 vendor/lib64/hw/activity_recognition.sdm660.so|d7dac1daafb812625094f5e85097c00fdc385da1
 vendor/lib64/libsensor1.so|dac9d5fb1b5aacfa5bedf812ebdd04eadd0af2dc
 vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|a6486bb8506902bbe2a4b743000e3e91ab93246a
 
 # Sensors - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib/sensors.ssc.so|9276c8863dccd2cd13e0a29083e75648ab0c0e97
-vendor/lib64/sensors.ssc.so|da3e7b1722ea136bd76b716ddd2ec814ee3cc0b7
+vendor/lib/sensors.ssc.so|2127a224529656d54b15177129ca6783784ccb24
+vendor/lib64/sensors.ssc.so|b53f9d8a5580feb9ca8f9e4efd080f76dc1d1588
 
 # Sensors configs - from clover - OPM1.171019.019.V10.3.2.0.ODJCNXM
 vendor/etc/sensors/hals.conf

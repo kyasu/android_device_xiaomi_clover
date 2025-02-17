@@ -19,6 +19,9 @@ debug.vds.allow_hwc=0
 # DPI
 vendor.display.lcd_density=320
 
+# Fingerprint
+persist.vendor.fingerprint.type=home
+
 # Lockscreen rotation (requested by ibooth2004@XDA (https://forum.xda-developers.com/showpost.php?p=82157253&postcount=545)
 lockscreen.rot_override=true
 

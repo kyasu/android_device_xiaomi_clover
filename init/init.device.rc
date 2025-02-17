@@ -124,7 +124,7 @@ on property:persist.vendor.sys.fp.vendor=none
     mount none /dev/null /vendor/framework/com.fingerprints.extension.jar bind
     mount none /dev/null /vendor/etc/permissions/com.fingerprints.extension.xml bind
     mount none /dev/null /vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk bind
-    stop vendor.fps_hal
+    stop vendor.fingerprint-default
 
 on property:ro.vendor.radio.noril=yes
     mount none /dev/null /system/app/CarrierDefaultApp/CarrierDefaultApp.apk bind

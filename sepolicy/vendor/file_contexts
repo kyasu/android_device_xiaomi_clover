@@ -1,6 +1,3 @@
-# Amplifier
-/(vendor|system/vendor)/bin/tinymix             u:object_r:vendor_tinyalsa_exec:s0
-
 # Camera
 /data/misc/camera                               u:object_r:camera_data_file:s0
 

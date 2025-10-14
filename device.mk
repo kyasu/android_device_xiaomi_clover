@@ -45,6 +45,9 @@ BOARD_HAVE_QCOM_FM := false
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Power
+$(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchscreen/enable_dt2w)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
